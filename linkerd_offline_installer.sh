@@ -40,7 +40,7 @@ case $OS in
       arm64)
         cli_arch=$arch
         ;;
-      )
+      *)
         echo "There is no linkerd $OS support for $arch. Please open an issue with your platform details."
         exit 1
         ;;
