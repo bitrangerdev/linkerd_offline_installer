@@ -74,7 +74,7 @@ case $OS in
     exit 1
     ;;
 esac
-dstfile="/home/sysadmin/containerd-k8s-offline/linkerd/linkerd2-cli-edge-24.8.2-linux-amd64"
+dstfile="$(pwd)/linkerd2-cli-edge-24.8.2-linux-amd64"
 (
   mkdir -p "${INSTALLROOT}/bin"
   chmod +x "${dstfile}"
