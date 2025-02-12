@@ -81,7 +81,6 @@ dstfile="$(pwd)/linkerd2-cli-edge-24.8.2-linux-amd64"
   rm -f "${INSTALLROOT}/bin/linkerd"
   ln -s "${dstfile}" "${INSTALLROOT}/bin/linkerd"
 )
-rm -r "$tmpdir"
 echo "Linkerd ${LINKERD2_VERSION} was successfully installed 🎉"
 echo ""
 happyexit
