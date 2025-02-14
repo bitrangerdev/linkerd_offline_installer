@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 LINKERD2_VERSION=${LINKERD2_VERSION:-edge-24.8.2}
-INSTALLROOT=${INSTALLROOT:-"$(eval echo ~$SUDO_USER)/.linkerd2"}
+INSTALLROOT=${INSTALLROOT:-"$(logname)/.linkerd2"}
 happyexit() {
   echo ""
   echo "Add the linkerd CLI to your path with:"
